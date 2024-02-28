@@ -1,7 +1,7 @@
 version: 2.1
 
 executors:
-  docker: # Docker using the Base Convenience Image
+  docker: # Docker using the Base Convenience Imag
     parameters:
       resource_class:
         type: string
@@ -375,9 +375,9 @@ workflows:
     jobs:
       - save_and_restore_cache
       - contexts:
-          context: org-global-2
+          context: org-global-4
       - multi-contexts:
-          context: individual-local-2
+          context: individual-local-4
       - write_workspace
       - read_workspace:
           requires:
